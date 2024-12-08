@@ -1,0 +1,50 @@
+body
+{
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#card-body
+{
+    width: 43%;
+    height: 90vh;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(4,120px);
+    gap: 30px;
+    padding: 10px;
+}
+h1
+{
+    font-size: 40px;
+    color: crimson;
+    margin: 0px;
+}
+
+#card-body div
+{
+    color: crimson;
+    background-color: bisque;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 150px;
+    transition: 0.5s;
+    /* animation: flip 0.5s ease; */
+}
+
+@keyframes flip {
+    0%{
+        transform: rotateY(-180deg);
+    }
+}
+
+.cardback{
+    position: relative;
+    cursor: pointer;
+    background-image: linear-gradient(45deg,pink,blue);
+}
